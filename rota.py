@@ -1,3 +1,5 @@
+# Author - Liam Edwards
+
 from datetime import *
 
 f=open("rota.csv", "w+")
@@ -10,9 +12,8 @@ def printingDates(count):
 
 
 
-# Excel Calender Format
+# CSV Calendar Format
 # SUBJECT    START DATE   START TIME    END DATE   END TIME    ALL DAY EVENT   DESCRIPTION   PRIVATE
-count = int(input())
 
 def counting(count):
     inc = 0
@@ -31,5 +32,8 @@ def counting(count):
         printingDates(count)
         inc += 1
 
+print("WARNING - CURRENTLY NO WAY TO UNDO AFTER IMPORTING TO GOOGLE CALENDAR")
+print("Enter a number to offset the script. e.g. -1 = Today or 0 = Tomorrow")
+count = int(input())
 f.write('Subject, '+'Start Date, ' +'Private\n')
 counting(count)
