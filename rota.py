@@ -41,3 +41,9 @@ with open("rota.csv", "w+") as f:
     # Write to a file
     f.write('Subject, ' + 'Start Date, ' + 'Private\n')
     counting(count)
+
+
+# TODO
+# Allow the user to enter their own 'on - off' periods
+# Potentially stretch out to some Django?
+#
