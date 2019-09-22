@@ -46,4 +46,4 @@ with open("rota.csv", "w+") as f:
 # TODO
 # Allow the user to enter their own 'on - off' periods
 # Potentially stretch out to some Django?
-#
+# Refactor and minimalise the code
